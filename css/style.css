@@ -1,0 +1,381 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.clearfix:after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+header {
+    padding: 38px 0 32px;
+}
+
+.logo {
+    float: left;
+    margin: 0;
+}
+
+.logo::first-letter {
+    color: #1abc9c;
+    font-weight: bold;
+}
+
+.site-logo {
+    font-size: 30px;
+    font-family: "Roboto";
+    font-weight: 300;
+    color: #555252;
+    text-transform: uppercase;
+    line-height: 1.067;
+    text-decoration: none;
+    margin: 0;
+}
+
+.main-nav {
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    float: right;
+    margin: 12px 0 0;
+    padding: 0;
+}
+
+.menu-item {
+    list-style: none;
+    font-size: 14px;
+    font-family: "Open Sans";
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 0.786;
+    float: left;
+}
+
+.menu-item:not(:last-of-type) {
+    margin-right: 30px;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #0f0101;
+}
+
+.menu-link:hover {
+    color: #1abc9c;
+}
+
+.slider {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.slider-content {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.slider-buttons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.clearfix:after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.slider-ctrl {
+    width: 104px;
+    height: 104px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+}
+
+.prev {
+    float: left;
+    background-image: url(../img/icon-left.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.next {
+    float: right;
+    background-image: url(../img/icon-right.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slider-text-block {
+    width: 770px;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slider-title {
+    margin: 0;
+    padding: 0;
+}
+
+.slider-title {
+    font-size: 60px;
+    font-family: "Roboto";
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.367;
+    letter-spacing: -0.02em;
+    margin-bottom: 10px;
+}
+
+.slider:hover .slider-ctrl {
+    background-color: #1abc9c;
+    cursor: pointer;
+}
+
+.slider:hover .slider-span {
+    color: #ff7200;
+}
+
+.slider-text {
+    font-size: 24px;
+    font-family: "Roboto";
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.296;
+    letter-spacing: -0.02em;
+    margin: 0;
+    padding: 0;
+}
+
+.slider-img {
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(52%);
+}
+
+.collection {
+    padding: 90px 0 100px;
+    background-color: #e9f0fd;
+}
+
+.collection-title {
+    margin: 0;
+    padding: 0;
+}
+
+.collection-title {
+    font-size: 48px;
+    font-family: "Roboto";
+    color: rgb(81, 81, 81);
+    text-transform: uppercase;
+    line-height: 0.667;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.collection-title::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    margin-top: 26px;
+    border-bottom: 8px solid #1abc9c;
+    width: 164px;
+}
+
+.card-list {
+    padding: 0;
+}
+
+.product-list:not(:last-child) {
+    margin-right: 30px;
+}
+
+.product-list {
+    list-style: none;
+    float: left;
+    position: relative;
+}
+
+.box-button {
+    position: absolute;
+    display: none;
+    width: 166px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.button {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    float: left;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgb(26, 188, 156);
+}
+
+.button:nth-of-type(-n + 3) {
+    margin-bottom: 8px;
+}
+
+.button:nth-of-type(-n + 2) {
+    margin-right: 8px;
+}
+
+.icon-like {
+    background-image: url(../img/icon-like.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.icon-arrows {
+    background-image: url(../img/icon-arrows.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.icon-clock {
+    background-image: url(../img/icon-clock.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.icon-basket {
+    background-image: url(../img/icon-basket.png);
+    width: 166px;
+    height: 50px;
+    color: #ffffff;
+    padding-left: 30px;
+    background-repeat: no-repeat;
+    background-position: 10% 50%;
+    font-size: 14px;
+    font-family: "Open Sans";
+    background-color: #323232;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.card-img-overlay::after {
+    content: "";
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 282px;
+    background-color: rgba(0, 0, 0, 0.55);
+    border: 10px solid rgba(255, 255, 255, 0.55);
+    background-clip: padding-box;
+}
+
+.product-name {
+    background-color: #323232;
+    width: 255px;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.product-link {
+    float: left;
+    font-size: 18px;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-align: left;
+    text-decoration: none;
+    margin: 0;
+    padding: 12px;
+}
+
+.price {
+    float: right;
+    font-size: 18px;
+    font-family: "Roboto";
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-align: left;
+    text-decoration: none;
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.44);
+}
+
+.product-list:hover .card-img-overlay::after {
+    display: block;
+}
+
+.product-list:hover .box-button {
+    display: block;
+}
+
+.product-list:hover .product-name {
+    background-color: #1abc9c;
+}
+
+footer {
+    padding: 30px 0;
+    text-align: center;
+    background-color: #323232;
+}
+
+.text-footer {
+    font-size: 16px;
+    font-family: "Open Sans";
+    color: rgb(254, 254, 254);
+    line-height: 1.75;
+    margin: 0;
+}
+
+.mark-name {
+    color: #1abc9c;
+    font-size: 16px;
+    font-family: "Open Sans";
+    text-decoration: none;
+    line-height: 1.75;
+}
